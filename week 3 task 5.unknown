@@ -1,0 +1,11 @@
+# Task 5: Promotion Checker
+
+# Asking for user input
+attendance = float(input("Enter your attendance percentage: "))
+marks = float(input("Enter your final marks: "))
+
+# Checking conditions for promotion
+if attendance >= 75 and marks >= 50:
+    print(" You are Promoted!")
+else:
+    print(" Not Promoted.")

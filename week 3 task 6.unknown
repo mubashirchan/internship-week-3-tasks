@@ -1,0 +1,25 @@
+# Task 6: Billing System
+
+# Taking user input
+num_products = int(input("Enter the number of products: "))
+total_price = float(input("Enter the total price (Rs.): "))
+
+# Applying discount based on conditions
+if total_price > 1000 and num_products > 3:
+    discount = 0.15
+    print("🎉 You got a 15% discount!")
+elif total_price > 500:
+    discount = 0.10
+    print("🎉 You got a 10% discount!")
+else:
+    discount = 0.0
+    print("No discount applied.")
+
+# Calculating final price
+discount_amount = total_price * discount
+final_price = total_price - discount_amount
+
+# Showing final bill
+print(f"Total Price: Rs. {total_price}")
+print(f"Discount: Rs. {discount_amount}")
+print(f"Final Bill: Rs. {final_price}")

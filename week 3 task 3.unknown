@@ -1,0 +1,21 @@
+# Task 3: Monthly Savings Classification
+
+# Asking user for monthly income and expenses
+income = float(input("Enter your monthly income: "))
+expenses = float(input("Enter your monthly expenses: "))
+
+# Calculating savings
+savings = income - expenses
+
+# Displaying savings
+print(f"\nYour monthly savings: Rs. {savings}")
+
+# Classifying the savings
+if savings > 10000:
+    print("You're Saving Well! 👍")
+elif 5000 <= savings <= 9999:
+    print("Your savings are Average. Keep it up!")
+elif savings < 5000:
+    print("Try to Save more. 💡")
+else:
+    print("Invalid input or unexpected condition.")

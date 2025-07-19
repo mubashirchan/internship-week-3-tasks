@@ -1,0 +1,22 @@
+# Take marks for 3 subjects
+sub1 = float(input("Enter marks for Subject 1: "))
+sub2 = float(input("Enter marks for Subject 2: "))
+sub3 = float(input("Enter marks for Subject 3: "))
+
+# Calculate total and percentage
+total = sub1 + sub2 + sub3
+percentage = (total / 300) * 100
+#Assigning grades
+if percentage >= 85:
+    grade = 'A'
+elif percentage >= 70:
+    grade = 'B'
+elif percentage >= 50:
+    grade = 'C'
+else:
+    grade = 'Fail'
+
+# Display result
+print("\nTotal Marks:", total)
+print("Percentage: {:.2f}%".format(percentage))
+print("Grade:", grade)

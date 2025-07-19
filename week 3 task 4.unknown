@@ -1,0 +1,11 @@
+# Task 4: Simple Login System
+
+# Asking for username and password
+username = input("Enter username: ")
+password = input("Enter password: ")
+
+# Checking credentials
+if username == "admin" and password == "1234":
+    print("Access Granted ")
+else:
+    print("Access Denied ")
